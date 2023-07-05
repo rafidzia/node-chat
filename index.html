@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>feel free to chat</title>
+        <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    </head>
+    <body>
+        <div id="login">
+        <form id="form_login">
+            <input type="text" id="nama_user" placeholder="Your Name Here" maxlength="20" autocomplete="off" autofocus required>
+            <div id="warn">Sudah ada username yang sama</div>
+        </form>
+            
+        </div>
+       <div id="chat" style="display: none;">
+        <ul id="messages">
+            
+        </ul>
+        <form id="form_chat" >
+            <input class="inline"type="text" id="text_box" placeholder="Type Chat Here" autocomplete="off" autofocus>
+            <button class="inline">Send</button>
+            <div class="inline onl"><a id="onclick" onclick="modal()">&equiv;</a></div>
+        </form>
+           <div id="list" class="hide" onclick="modal()">
+            <h1>Siapa yang Online?</h1>
+            <br/>
+            <ul id="ullist">
+               <li id="usrname"></li>
+            </ul>
+           </div>
+        </div>  
+        <script src="./socket.io/socket.io.js"></script>
+        <script src="./assets/jquery.min.js"></script>
+        <script src="./assets/client.js"></script>
+    </body>
+</html>
+<script>
+    var asd = document.getElementById('form-login');
+
+</script>

@@ -1,0 +1,27 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html{-webkit-font-smoothing: antialiased;}
+body { font: 13px Helvetica, Arial; }
+.show{visibility: visible;}
+.hide{visibility: hidden;}
+.inline{display: inline-block;vertical-align: middle;}
+#login{display:table;position:absolute;width:100%;height:100%;}
+form {background: #444; padding: 3px;}
+#form_login {display:table-cell;vertical-align: middle;text-align: center;}
+#form_chat { position: fixed; bottom: 0;  width: 100%; }
+input { padding: 10px; margin-right: .5%;background-color: transparent;color:white;outline:none;}
+#form_chat input{ width: 80%;border: none;  overflow-y: hidden;padding:10px;}
+#form_login input{ width: auto;text-align: center; border:none; border-bottom:2px solid #999;}
+#form_login #warn{color:white;margin:10px;display:none;}
+button {width:8%; background: dodgerblue/*rgb(130, 224, 255)*/;color:white; border: none; padding: 10px; }
+#messages {list-style-type: none; margin: 0; padding: 0 0 50px 0; width:100%;word-wrap: break-word;}
+#messages li { padding: 20px;}
+#messages li.chat{font-size:20px;}
+#messages li span.time{font-size:12px; color:#999;}
+#messages li.status{color:#999;font-size:15px;text-align: center;}
+#messages li.typing{color:#999;font-size:15px;text-align: center;}
+.onl{position:relative; width:9%;text-align: center;padding:0;}
+.onl a{font-family: 'times new roman';font-size:50px;color:white;}
+#onclick{cursor: pointer;}
+#list{position:fixed;width:100%;height:100%;padding:50px;overflow: auto; left:0;top:0;text-align: center;background-color:rgba(50,50,50,0.7);color: white;}
+#ullist li{list-style: none;color:white;font-size:20px;padding:10px;}
+#modalback{position:fixed;width:100%;height:100%;background-color:rgba(50,50,50,0.9);}
